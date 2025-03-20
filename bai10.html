@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Danh sách nhân viên Rikkei</title>
+</head>
+<style>
+    body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.add-employee {
+    margin-bottom: 20px;
+}
+
+.add-employee input,
+.add-employee button {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination .page-number {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination .current-page {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Danh sách nhân viên Rikkei</h1>
+
+        <div class="add-employee">
+            <input type="text" id="name" placeholder="Tên nhân viên">
+            <input type="text" id="position" placeholder="Chức vụ">
+            <button id="addBtn">Thêm nhân viên</button>
+        </div>
+
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Chức vụ</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="pagination">
+            <button id="prevBtn">Previous</button>
+            <div id="pageNumbers"></div>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+    <script src="bai10.js"></script>
+</body>
+
+</html>

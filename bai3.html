@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+<style>
+    .color-box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.purple {
+    background-color: purple;
+}
+</style>
+<body>
+
+    <h2>Change background-color</h2>
+    <p>Mouse click</p>
+    <div class="color-box green" onclick="changeBackgroundColor('green')">xanh</div>
+    <div class="color-box red" onclick="changeBackgroundColor('red')">đỏ</div>
+    <div class="color-box purple" onclick="changeBackgroundColor('purple')">tím</div>
+
+    <script src="./bai3.js"></script>
+
+</body>
+
+</html>
